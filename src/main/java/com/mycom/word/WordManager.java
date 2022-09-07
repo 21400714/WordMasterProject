@@ -2,7 +2,12 @@ package com.mycom.word;
 
 import java.util.Scanner;
 
-public class WordManager { // wordCRUD를 사용한 실제 관리
+/**
+ * wordCRUD 클래스를 사용해 영단어 마스터 프로그램을 실제로 관리하는 클래스입니다.
+ * 사용자에게 영단어 마스터 프로그램을 사용하기 위한 UI를 제공합니다.
+ */
+
+public class WordManager {
     Scanner s = new Scanner(System.in);
     WordCRUD wordCRUD;
 

@@ -1,6 +1,10 @@
 package com.mycom.word;
 
-public class Main { // static main 함수, starter class
+/**
+ * 영단어 마스터 프로그램의 동작을 테스트하기 위한 클래스입니다.
+ */
+
+public class Main {
     public static void main(String[] args) {
         System.out.println("*** 영단어 마스터 ***");
         new WordManager().start();

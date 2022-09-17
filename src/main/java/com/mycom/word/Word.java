@@ -7,26 +7,26 @@ package com.mycom.word;
  */
 
 public class Word {
-    private int id;
+    private int index;
     private int level;
     private String word;
     private String meaning;
 
     Word() {}
 
-    Word(int id, int level, String word, String meaning) {
-        this.id = id;
+    Word(int index, int level, String word, String meaning) {
+        this.index = index;
         this.level = level;
         this.word = word;
         this.meaning = meaning;
     }
 
-    public int getId() {
-        return id;
+    public int getIndex() {
+        return index;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIndex(int index) {
+        this.index = index;
     }
 
     public int getLevel() {
@@ -53,23 +53,14 @@ public class Word {
         this.meaning = meaning;
     }
 
-    /*
-    1 *         electric  전기의, 전기를 생산하는
-    2 *             pole  기둥, 장대
-    */
-
     @Override
     public String toString() {
-        String slevel = "";
+        return String.format("%-3s", "*".repeat(Math.max(0, level)))
+                + String.format("%20s", word)
+                + "   " + meaning;
+    }
 
-        for (int i = 0; i < level; i++) {
-            slevel += "*";
-        }
-
-        String str = String.format("%-3s", slevel)
-                + String.format("%15s", word)
-                + "  " + meaning;
-
-        return str;
+    public String toFileString() {
+        return this.level + "|" + this.word + "|" + this.meaning;
     }
 }

@@ -11,28 +11,13 @@ public class WordManager {
     Scanner s = new Scanner(System.in);
     WordCRUD wordCRUD;
 
-    /*
-    *** 영단어 마스터 ***
-
-    *********************
-    1. 모든 단어 보기
-    2. 수준별 단어 보기
-    3. 단어 검색
-    4. 단어 추가
-    5. 단어 수정
-    6. 단어 삭제
-    7. 파일 저장
-    0. 나가기
-    *********************
-    => 원하시는 메뉴의 번호를 입력하세요. 4
-    */
-
     WordManager() {
-        wordCRUD = new WordCRUD(s);
+        wordCRUD = new WordCRUD();
     }
 
-    public int selectMenu() {
-        System.out.print("\n*********************\n" +
+    public int menu() {
+        System.out.print("\n*** 영단어 마스터 ***\n\n" +
+                "*********************\n" +
                 "1. 모든 단어 보기\n" +
                 "2. 수준별 단어 보기\n" +
                 "3. 단어 검색\n" +
@@ -42,23 +27,33 @@ public class WordManager {
                 "7. 파일 저장\n" +
                 "0. 나가기\n" +
                 "*********************\n" +
-                "=> 원하시는 메뉴의 번호를 입력하세요. ");
+                "=> 원하는 메뉴의 번호를 입력하세요: ");
 
         return s.nextInt();
     }
 
     public void start() {
+        wordCRUD.loadFile();
+
         while (true) {
-            int menu = selectMenu();
+            int menu = menu();
             if (menu == 0) {
-                System.out.println("\n영단어 마스터를 종료합니다. 이용해주셔서 감사합니다.");
+                System.out.println("\n[영단어 마스터를 종료합니다. 이용해주셔서 감사합니다.]");
                 break;
-            }
-            if (menu == 4) {
-                wordCRUD.addWord();
-            }
-            else if (menu == 1) {
-                wordCRUD.listAll();
+            } else if (menu == 1) {
+                wordCRUD.showWordList();
+            } else if (menu == 2) {
+                wordCRUD.searchByLevel();
+            } else if (menu == 3) {
+                wordCRUD.searchByKeyword();
+            } else if (menu == 4) {
+                wordCRUD.create();
+            } else if (menu == 5) {
+                wordCRUD.update();
+            } else if (menu == 6) {
+                wordCRUD.delete();
+            } else if (menu == 7) {
+                wordCRUD.saveFile();
             }
         }
     }

@@ -1,0 +1,43 @@
+1|ordinary|보통의, 일상적인
+1|in terms of|~에 관하여
+1|human beings|인간
+2|in the light|~을 참고로 하여
+1|pleasure|기쁨, 즐거움
+1|generous|후한, 너그러운
+1|anxious|불안해하는, 염려하는
+2|precise|정확한, 정밀한
+1|transmit|전송하다
+1|involve|수반하다, 포함하다
+2|concern|영향을 미치다, 관련되다
+2|reflective|사색적인
+1|doubt|의심, 의심하다
+2|take for granted|당연한 일로 여기다
+2|fundamental|근본적인, 본질적인
+1|conduct|하다, 행동
+2|rational|합리적인
+1|belong to|~에 속하다
+2|discipline|규율, 훈육
+3|metaphysics|형이상학
+3|epistemology|인식론
+1|ethics|윤리학
+2|methodology|방법론
+2|intellectuals|지식인
+1|negation|정반대, 부정
+2|pursuit|추구
+1|genuine|진짜의, 진품의
+2|apart from|~외에는, ~을 제외하고
+3|academic integrity|학습윤리
+2|research ethics|조사윤리
+2|appreciate|진가를 알아보다, 인정하다
+2|contribution|기여
+2|misconduct|위법 행위, 불법 행위
+1|deserve|~을 받을 만하다, ~을 해야 마땅하다
+2|appropriate|적절한
+2|criteria|기준
+1|indicate|나타내다
+1|authorship|저자
+2|undermine|약화시키다
+2|falsification|위조
+2|fabrication|위조
+1|neutral|중립적인
+1|ponder|숙고하다

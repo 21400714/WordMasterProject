@@ -18,9 +18,9 @@
 <img src="screenshots/단어 삭제.png"></img><br/><br/>
 - <b>[7. 파일 저장]</b> 메뉴 실행 화면<br/><br/>
 <img src="screenshots/파일 저장.png"></img><br/><br/>
-- 단어장 파일 (단어 삭제 전)<br/><br/>
+- 단어장 파일 ('mediate' 단어 삭제 전)<br/><br/>
 <img src="screenshots/단어장 파일 (단어 삭제 전).png"></img><br/><br/>
-- 단어장 파일 (단어 삭제 후)<br/><br/>
+- 단어장 파일 ('mediate' 단어 삭제 후)<br/><br/>
 <img src="screenshots/단어장 파일 (단어 삭제 후).png"></img><br/><br/>
 - 파일 로딩, <b>[1. 모든 단어 보기]</b> 메뉴 실행 화면<br/><br/>
 <img src="screenshots/파일 로딩, 모든 단어 보기 (1).png"></img><br/><br/>
